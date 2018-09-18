@@ -1,0 +1,30 @@
+{
+  "name": "dentolog",
+  "private": true,
+  "scripts": {
+    "start": "meteor run",
+    "test": "meteor test --once --driver-package meteortesting:mocha",
+    "test-app": "TEST_WATCH=1 meteor test --full-app --driver-package meteortesting:mocha",
+    "visualize": "meteor --production --extra-packages bundle-visualizer"
+  },
+  "dependencies": {
+    "@babel/runtime": "7.0.0-beta.55",
+    "fullcalendar-reactwrapper": "^1.0.7",
+    "meteor-node-stubs": "^0.4.1",
+    "moment": "^2.22.2",
+    "react": "^16.5.1",
+    "react-big-calendar": "^0.19.2",
+    "react-dom": "^16.5.0",
+    "react-router-dom": "^4.3.1",
+    "semantic-ui-css": "^2.3.1",
+    "semantic-ui-icon": "^2.3.3",
+    "semantic-ui-react": "^0.82.3"
+  },
+  "meteor": {
+    "mainModule": {
+      "client": "client/main.js",
+      "server": "server/main.js"
+    },
+    "testModule": "tests/main.js"
+  }
+}
