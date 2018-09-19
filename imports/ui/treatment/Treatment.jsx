@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Item,Form, Image,Header,Button,Segment,Menu,Grid } from 'semantic-ui-react';
 import { Route, Link, Switch } from 'react-router-dom';
-import  PatientHistory from '/imports/ui/patientHistory/PatientHistory';
+import  PatientHistory from '/imports/ui/patientHistory/PatientHistory.jsx';
 
 const appealOptions = [
   { key: 'appeal', value: 'appeal', text: 'Боль' },
@@ -78,7 +78,7 @@ export default class Treatment extends Component {
           </Grid.Column>
           <Grid.Column width={13}>
              <Switch>
-                <Route path="/patientHistory/PatientHistory" component={PatientHistory} />
+                <Route path="/patientHistory" component={PatientHistory} />
               </Switch>
           </Grid.Column>
         </Grid>

@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-
 import { Menu, Grid, Container, Segment } from 'semantic-ui-react';
-
 import { Route, Link, Switch } from 'react-router-dom';
+
 
 import TopHeader from './TopHeader';
 import Queue from '/imports/ui/queue/Queue';
@@ -18,6 +17,9 @@ import  Diagnosis from '/imports/ui/docs/diagnosis/Diagnosis.jsx';
 import  MKB10 from '/imports/ui/docs/mkb10/MKB10.jsx';
 import  Service from '/imports/ui/docs/service/Service.jsx';
 import Status from '/imports/ui/docs/status/Status.jsx';
+import PatientHistory from '/imports/ui/patientHistory/PatientHistory.jsx';
+import Employee from '/imports/ui/resources/employee/Employee.jsx';
+import Shedule from '/imports/ui/resources/shedule/Shedule.jsx';
 
 
 export default class Layout extends Component {
@@ -74,7 +76,11 @@ export default class Layout extends Component {
                  <Route path="/diagnosis" component={Diagnosis} />
                  <Route path="/service" component={Service} />
                  <Route path="/mkb10" component={MKB10} />
-                  <Route path="/status" component={Status} />
+                 <Route path="/status" component={Status} />
+                 <Route path="/patientHistory" component={PatientHistory} />
+                 <Route path="/employee" component={Employee} />
+                 <Route path="/shedule" component={Shedule} />
+
                 </Switch>
               </Segment>
             </Grid.Column>
