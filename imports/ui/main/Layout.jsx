@@ -20,6 +20,7 @@ import Status from '/imports/ui/docs/status/Status.jsx';
 import PatientHistory from '/imports/ui/patientHistory/PatientHistory.jsx';
 import Employee from '/imports/ui/resources/employee/Employee.jsx';
 import Shedule from '/imports/ui/resources/shedule/Shedule.jsx';
+import Authorization from '/imports/ui/authorization/Authorization.jsx';
 
 
 export default class Layout extends Component {
@@ -80,6 +81,7 @@ export default class Layout extends Component {
                  <Route path="/patientHistory" component={PatientHistory} />
                  <Route path="/employee" component={Employee} />
                  <Route path="/shedule" component={Shedule} />
+                 <Route path="/authorization" component={Authorization} />
 
                 </Switch>
               </Segment>

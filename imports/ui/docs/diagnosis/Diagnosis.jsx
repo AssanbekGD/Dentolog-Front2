@@ -10,6 +10,8 @@ const renderDiagnosis = function (renderDiagnosis) {
       <Table.Body>
         <Table.Row>
           <Table.Cell>{dDiagnosis.name}</Table.Cell>
+            <Table.Cell>{dDiagnosis.name}</Table.Cell>
+              <Table.Cell>{dDiagnosis.name}</Table.Cell>
         </Table.Row>
       </Table.Body>;
     </Table>
@@ -35,9 +37,11 @@ render() {
     let diagnos = Diagnos.find().fetch();
   });
     return (
-      <div>
+<div>
+
 <Form onSubmit={handleSubmit}>
-  <Form.Input
+
+<Form.Input
     name="diagnosisName"
 placeholder="Диагноз"
   />
@@ -50,7 +54,7 @@ placeholder="Диагноз"
     </Table.Row>
   </Table.Header>
  </Table>
- <Form.Button>Редактировать</Form.Button>
+<Form.Button>Редактировать</Form.Button>
  <Form.Button>Удалить</Form.Button>
  </Form>
 
